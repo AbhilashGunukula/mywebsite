@@ -1,0 +1,199 @@
+/* LeetCode Section Styles */
+.leetcode {
+  background: var(--section-bg);
+  padding: 6rem 0;
+}
+
+.leetcode-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Loading and Error States */
+.leetcode-loading,
+.leetcode-error {
+  text-align: center;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.leetcode-loading .spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--light-bg);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Stats Cards */
+.leetcode-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-bg);
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-bg);
+  margin-bottom: 0.5rem;
+}
+
+.stat-content p {
+  color: var(--light-text);
+  font-size: 1rem;
+}
+
+/* Category Cards */
+.leetcode-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.category-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.category-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-bg);
+}
+
+.category-count {
+  color: var(--light-text);
+  font-size: 0.875rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--light-bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+/* Difficulty-specific colors */
+.category-card:nth-child(1) .progress-fill {
+  background: var(--success-color);
+}
+
+.category-card:nth-child(2) .progress-fill {
+  background: var(--warning-color);
+}
+
+.category-card:nth-child(3) .progress-fill {
+  background: var(--danger-color);
+}
+
+/* Footer */
+.leetcode-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.leetcode-footer .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.leetcode-footer .btn i {
+  font-size: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leetcode-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .leetcode-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .stat-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Google Analytics Code */
+.analytics-notice {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(212, 175, 55, 0.1);
+  border-radius: var(--border-radius);
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--secondary-color);
+}

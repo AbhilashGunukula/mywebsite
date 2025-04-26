@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Abhilash Gunukula's Portfolio | Software Developer</title>
+    <meta
+      content="Professional portfolio showcasing skills, projects, and experience"
+      name="description"
+    />
+    <meta
+      content="portfolio, developer, projects, skills, resume"
+      name="keywords"
+    />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS Files -->
+    <link href="style.css" rel="stylesheet" />
+    <link href="leetcode-style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="#hero" class="logo">Abhilash<span>.</span></a>
+        </div>
+        <div class="navbar-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#leetcode" class="nav-link">LeetCode</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button class="navbar-toggle" aria-label="Toggle navigation">
+          <span class="toggle-icon"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Abhilash Gunukula</span>
+          </h1>
+          <h2 class="hero-subtitle">Software Developer & Problem Solver</h2>
+          <p class="hero-description">
+            I build exceptional digital experiences with clean, efficient code
+            and modern design principles.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- About Section -->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+          </div>
+          <div class="about-content">
+            <div class="about-image" data-aos="fade-right">
+              <div class="profile-image-container">
+                <img
+                  src="assets/img/profile.jpg"
+                  alt="Abhilash Reddy Gunukula's Profile"
+                  class="profile-img"
+                />
+                <div class="profile-overlay">
+                  <div class="profile-overlay-content">
+                    <i class="bi bi-camera"></i>
+                    <span>Click to view full image</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+              <h3 class="about-title">
+                I'm a passionate software developer who loves turning ideas into
+                reality
+              </h3>
+              <p class="about-description">
+                Hey there! I'm Abhilash Gunukula, a software developer with a
+                knack for solving complex problems and creating elegant
+                solutions. I thrive on the challenge of building efficient,
+                scalable applications that make a real difference. When I'm not
+                coding, you'll find me exploring new technologies, contributing
+                to open-source projects, or solving LeetCode problems to keep my
+                skills sharp.
+              </p>
+              <div class="about-info">
+                <div class="info-item">
+                  <span class="info-label">Name:</span>
+                  <span class="info-value">Abhilash Gunukula</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Email:</span>
+                  <span class="info-value">abhilash.gunukula@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Location:</span>
+                  <span class="info-value">United States</span>
+                </div>
+              </div>
+              <div class="about-actions">
+                <a
+                  href="assets/pdf/resume.pdf"
+                  class="btn btn-primary"
+                  download
+                >
+                  <i class="bi bi-download"></i> Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section skills">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+          </div>
+          <div class="skills-grid">
+            <!-- Frontend Skills -->
+            <div class="skill-category" data-aos="fade-up">
+              <h3 class="category-title">Frontend Development</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-skill="HTML5" data-level="95">
+                  <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 95%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="CSS3" data-level="90">
+                  <div class="skill-icon"><i class="bi bi-palette"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="JavaScript" data-level="90">
+                  <div class="skill-icon">
+                    <i class="bi bi-filetype-js"></i>
+                  </div>
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="React.js" data-level="85">
+                  <div class="skill-icon">
+                    <i class="bi bi-code-square"></i>
+                  </div>
+                  <div class="skill-info">
+                    <span class="skill-name">React.js</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="category-title">Backend Development</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-skill="Java" data-level="90">
+                  <div class="skill-icon">
+                    <i class="bi bi-filetype-java"></i>
+                  </div>
+                  <div class="skill-info">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="Spring Boot"
+                  data-level="85"
+                >
+                  <div class="skill-icon"><i class="bi bi-gear"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">Spring Boot</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Node.js" data-level="85">
+                  <div class="skill-icon"><i class="bi bi-server"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">Node.js</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Express.js" data-level="85">
+                  <div class="skill-icon"><i class="bi bi-diagram-3"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">Express.js</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Python" data-level="80">
+                  <div class="skill-icon">
+                    <i class="bi bi-filetype-py"></i>
+                  </div>
+                  <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Databases" data-level="85">
+                  <div class="skill-icon"><i class="bi bi-database"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">Databases</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DevOps & Cloud Tools -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="category-title">DevOps & Cloud Tools</h3>
+              <div class="skill-items">
+                <div class="skill-item" data-skill="Kubernetes" data-level="80">
+                  <div class="skill-icon"><i class="bi bi-box"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">Kubernetes</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Docker" data-level="85">
+                  <div class="skill-icon"><i class="bi bi-box-seam"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">Docker</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="RedHat OpenShift"
+                  data-level="80"
+                >
+                  <div class="skill-icon"><i class="bi bi-cloud"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">RedHat OpenShift</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Jenkins" data-level="85">
+                  <div class="skill-icon"><i class="bi bi-gear"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">Jenkins</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Kafka" data-level="80">
+                  <div class="skill-icon"><i class="bi bi-diagram-3"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">Kafka</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="AWS" data-level="85">
+                  <div class="skill-icon"><i class="bi bi-cloud"></i></div>
+                  <div class="skill-info">
+                    <span class="skill-name">AWS</span>
+                    <div class="skill-progress">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience Section -->
+      <section id="experience" class="section experience">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">My professional journey</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-content">
+                <div class="timeline-date">Aug 2023 - Present</div>
+                <div class="timeline-title">
+                  Full-Stack Developer & API Integrator
+                </div>
+                <div class="timeline-company">Texas Tech University</div>
+                <div class="timeline-description">
+                  <ul>
+                    <li>
+                      Engineered Spring Boot microservices for payment
+                      processing and dining management, handling high-traffic
+                      campus services
+                    </li>
+                    <li>
+                      Built secure REST APIs with Spring Security and
+                      OAuth2/JWT, reducing transaction errors by 40%
+                    </li>
+                    <li>
+                      Implemented Kafka-based real-time messaging for seamless
+                      order and menu synchronization
+                    </li>
+                    <li>
+                      Developed Node.js microservices for real-time
+                      student-staff communication
+                    </li>
+                    <li>
+                      Deployed and monitored services on AWS (EC2, S3, RDS,
+                      Lambda) with Grafana/Prometheus
+                    </li>
+                    <li>
+                      Automated CI/CD pipelines using Jenkins, Docker, and
+                      Kubernetes
+                    </li>
+                  </ul>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">AWS</span>
+                  <span class="tag">Kafka</span>
+                  <span class="tag">Kubernetes</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Jenkins</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-content">
+                <div class="timeline-date">May 2022 - Jul 2023</div>
+                <div class="timeline-title">Software Developer</div>
+                <div class="timeline-company">Amdocs</div>
+                <div class="timeline-description">
+                  <ul>
+                    <li>
+                      Architected scalable backend systems for NextG CORE using
+                      Java and Spring Boot
+                    </li>
+                    <li>
+                      Led T-Mobile data migration project, ensuring seamless
+                      transition between legacy and new systems
+                    </li>
+                    <li>
+                      Developed REST APIs for automated ticket generation,
+                      improving support response times
+                    </li>
+                    <li>
+                      Created automated retry mechanism, reducing manual
+                      intervention by 30%
+                    </li>
+                    <li>
+                      Deployed services on Red Hat OpenShift, minimizing
+                      integration errors
+                    </li>
+                    <li>
+                      Presented product features to major clients like Syntel
+                      and Vodafone
+                    </li>
+                  </ul>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">REST API</span>
+                  <span class="tag">OpenShift</span>
+                  <span class="tag">Microservices</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-content">
+                <div class="timeline-date">Jan 2020 - Apr 2022</div>
+                <div class="timeline-title">
+                  Application Development Analyst
+                </div>
+                <div class="timeline-company">Accenture</div>
+                <div class="timeline-description">
+                  <ul>
+                    <li>
+                      Developed REST APIs using Java and Spring Boot for vehicle
+                      information systems
+                    </li>
+                    <li>
+                      Optimized SQL queries and implemented caching, reducing
+                      execution time by 50%
+                    </li>
+                    <li>
+                      Led cross-functional team collaboration among 80+ members
+                    </li>
+                    <li>
+                      Managed production support, resolving 100+ daily defects
+                      using JIRA and Splunk
+                    </li>
+                    <li>
+                      Ensured smooth post-deployment operations and minimized
+                      system downtime
+                    </li>
+                  </ul>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">JIRA</span>
+                  <span class="tag">Splunk</span>
+                  <span class="tag">REST API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LeetCode Section -->
+      <section id="leetcode" class="section leetcode">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">LeetCode Stats</h2>
+            <p class="section-subtitle">My coding journey</p>
+          </div>
+          <div class="leetcode-container" data-username="abhi354">
+            <!-- LeetCode content will be dynamically inserted here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Recent work and achievements</p>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up">
+              <div class="project-image">
+                <img
+                  src="assets/img/projects/library-app.jpg"
+                  alt="Library Application"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Library Management System</h3>
+                <p class="project-description">
+                  A comprehensive library management application that handles
+                  book inventory, member management, and borrowing operations.
+                  Features include user authentication, book search, and
+                  automated notifications.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">React</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Okta</span>
+                  <span class="tag">Stripe</span>
+                  <span class="tag">Postman</span>
+                  <span class="tag">REST API</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/AbhilashGunukula/LIBRARY-APPLICATION"
+                    class="link-icon"
+                    title="View Project"
+                    target="_blank"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-image">
+                <img
+                  src="assets/img/projects/page-translation.jpg"
+                  alt="Page Translation"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Page Translation Tool</h3>
+                <p class="project-description">
+                  A web-based translation tool that allows users to translate
+                  entire web pages while maintaining the original layout and
+                  formatting. Supports multiple languages and provides a
+                  seamless user experience.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">API Integration</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/AbhilashGunukula/PageTranslation"
+                    class="link-icon"
+                    title="View Project"
+                    target="_blank"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-image">
+                <img
+                  src="assets/img/projects/ai-image-detection.jpg"
+                  alt="AI Image Detection"
+                />
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">AI-Generated Image Detection</h3>
+                <p class="project-description">
+                  An advanced deep learning system that identifies AI-generated
+                  images using state-of-the-art neural networks. The project
+                  implements sophisticated image analysis techniques to
+                  distinguish between real and AI-generated content with high
+                  accuracy.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">PyTorch</span>
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">ResNet</span>
+                  <span class="tag">VGG</span>
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Computer Vision</span>
+                  <span class="tag">Machine Learning</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="link-icon"
+                    title="Coming Soon"
+                    target="_blank"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's work together</p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info" data-aos="fade-right">
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Email</h3>
+                  <p>abhilash.gunukula@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Location</h3>
+                  <p>United States</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <div class="info-content">
+                  <h3>LinkedIn</h3>
+                  <p>
+                    <a
+                      href="https://linkedin.com/in/gabhilashreddy"
+                      target="_blank"
+                      >linkedin.com/in/gabhilashreddy</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left">
+              <form id="contactForm" class="form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="What should I call you?"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Where can I reach you?"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    placeholder="What's this about?"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Tell me what's on your mind..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#hero" class="logo">Abhilash<span>.</span></a>
+            <p class="footer-description">
+              Building digital experiences with passion and precision. Let's
+              create something amazing together!
+            </p>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://linkedin.com/in/gabhilashreddy"
+              class="social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/AbhilashGunukula"
+              class="social-link"
+              aria-label="GitHub"
+              target="_blank"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              href="https://leetcode.com/abhi354"
+              class="social-link"
+              aria-label="LeetCode"
+              target="_blank"
+            >
+              <i class="bi bi-code-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Abhilash Gunukula. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#hero" class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Main JS Files -->
+    <script src="main.js"></script>
+    <script src="leetcode-integration.js"></script>
+  </body>
+</html>
